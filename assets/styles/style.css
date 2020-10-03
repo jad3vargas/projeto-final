@@ -1,0 +1,137 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background: #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+  background: url('../img/mick-haupt-o-0392T96qg-unsplash.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.card {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, .7);
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+  box-sizing: border-box;
+}
+
+@media (max-width: 700px) {
+  .card {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 430px) {
+  .card  {
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+}
+
+.profile-img-container {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.profile-img {
+  width: 100%;
+}
+
+.profile-name-container {
+  flex: 1;
+}
+
+.profile-name {
+  margin: 0;
+  padding: 4px;
+  font-family: 'Lobster', cursive;
+  font-size: 36px;
+}
+
+.profile-name-highlight {
+  color: #ff4fc1;
+}
+
+@media (max-width: 700px) {
+  .profile-name {
+    margin-top: 20px;
+  }
+}
+
+.profile-description {
+  margin: 0;
+  padding: 4px;
+  color: #5d5d5d;
+  font-family: 'Roboto', sans-serif;
+}
+
+.social-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 20px;
+}
+
+@media (max-width: 430px) {
+  .social-container {
+    flex-direction: column;
+  }
+}
+
+.social {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 4px;
+}
+
+@media (max-width: 430px) {
+  .social {
+    width: 100%;
+  }
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #5d5d5d;
+  font-family: 'Roboto', sans-serif;
+}
+
+.social-link:hover {
+  color: #ff4fc1;
+}
+
+.social-img {
+  width: 32px;
+  height: 32px;
+  margin-right: 5px;
+}
+
+.footer {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
